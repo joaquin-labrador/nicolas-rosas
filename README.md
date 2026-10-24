@@ -4,6 +4,8 @@ Landing en **React 19 + TypeScript + Vite**. Diseñada en rojo y blanco, con las
 
 ## Abrir la página ahora
 
+**Web publicada:** [joaquin-labrador.github.io/nicolas-rosas](https://joaquin-labrador.github.io/nicolas-rosas/).
+
 En la entrega local, abrí **ABRIR.html** con doble clic. Conservá la carpeta `dist` junto a ese archivo: contiene las fotografías. No hace falta instalar nada para esta vista local. Las fuentes tipográficas usan Google Fonts y requieren conexión; sin ella se usan fuentes de respaldo.
 
 Si clonaste el código desde GitHub, ejecutá primero `npm ci` y `npm run build` para generar `ABRIR.html` y `dist/`. Esos archivos generados no se guardan en el repositorio.
@@ -61,6 +63,18 @@ Leé **INTEGRACIONES.md** para conectar un endpoint propio y **INVESTIGACION.md*
 
 `npm run build` realiza comprobación estricta de TypeScript y compilación. `npm run test:feed` ejecuta seis pruebas de datos, URLs, estadísticas incoherentes y caducidad. Se revisaron en navegador el diseño de escritorio y móvil (390 px), menú, cambio de etapa, galería, navegación con teclado, pestañas, modales y preparación/actualización de la propuesta. No se enviaron mensajes externos.
 
-## Publicación posterior
+## Despliegue gratuito en GitHub Pages
 
-El proyecto se entrega local, según lo pedido. Para publicarlo más adelante, servir `dist/` en un hosting estático con HTTPS. No hace falta un backend para el portfolio. Antes de activar datos en directo, validar cobertura de la temporada y del jugador con el proveedor elegido. Confirmar también con Nicolás el contenido y los permisos de uso de las fotografías antes de la publicación pública.
+La web se publica desde este repositorio público, con autorización de su propietario, en [GitHub Pages](https://joaquin-labrador.github.io/nicolas-rosas/).
+
+Proceso configurado:
+
+1. **Settings → Pages → Source → GitHub Actions.** Se usa el dominio gratuito `github.io`, con HTTPS.
+2. Al subir cambios a `main`, [el workflow Pages](.github/workflows/pages.yml) ejecuta `npm ci`, las seis pruebas del feed y `npm run build`.
+3. El job `build` sube únicamente `dist/` como artefacto de la web.
+4. El job `deploy` publica ese artefacto en el entorno `github-pages`.
+5. El resultado se consulta en [Actions](https://github.com/joaquin-labrador/nicolas-rosas/actions). También se puede iniciar manualmente con **Run workflow**.
+
+La primera publicación terminó correctamente el 24 de octubre de 2026: [ejecución y registros](https://github.com/joaquin-labrador/nicolas-rosas/actions/runs/40115503537). El código mantiene rutas relativas para que las imágenes y el bundle funcionen bajo `/nicolas-rosas/`, así como en la vista local generada.
+
+No se requiere dominio de pago, backend ni credenciales personales en el workflow. Las estadísticas en directo siguen pendientes de un proveedor verificado; publicar la web no activa esa integración.
