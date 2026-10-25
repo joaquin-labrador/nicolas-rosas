@@ -6,7 +6,10 @@
 - `npm test`: 22 pruebas aprobadas (16 de idiomas, fechas y perfil; 6 de datos deportivos).
 - Cinco diccionarios completos, sin parámetros ausentes, con validación de claves y longitudes.
 - Revisión de código: componentes, navegación, formularios, persistencia, impresión y metadatos separados por responsabilidad.
-- La vista previa local no pudo conectarse desde el navegador de este entorno; la comprobación visual se realizará sobre el despliegue de Pages.
+- La vista previa local no pudo conectarse desde el navegador de este entorno; se verificó la versión pública de Pages después del despliegue.
+- Verificados en navegador los cinco idiomas, metadatos, ficha imprimible, persistencia de preferencia, selección de trayectoria y pestañas conservadas al traducir, menú móvil y galería con teclado.
+- Formulario en francés: validación requerida y borrador traducidos comprobados con datos de prueba, sin enviar mensajes externos.
+- Diseño revisado a 390 px en los cinco idiomas; ajuste adicional de la portada para pantallas de 320 px.
 
 ## Primera entrega · 24 de octubre de 2026
 

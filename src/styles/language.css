@@ -140,3 +140,13 @@
     max-width: 79px;
   }
 }
+
+/* En móviles muy estrechos, el nombre no debe imponer el ancho de la cuadrícula. */
+.hero-copy {
+  min-width: 0;
+}
+@media (max-width: 370px) {
+  .hero h1 {
+    font-size: clamp(82px, 25.4vw, 99px);
+  }
+}
