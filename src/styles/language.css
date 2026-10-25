@@ -3,6 +3,7 @@
   display: none !important;
 }
 .header-actions {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 22px;
@@ -196,6 +197,9 @@
   }
 }
 @media (max-width: 760px) {
+  .language-switcher {
+    position: static;
+  }
   .language-trigger {
     padding: 8px;
     gap: 7px;

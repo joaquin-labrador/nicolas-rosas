@@ -1,5 +1,12 @@
 # Validación de la entrega
 
+## Selector de idiomas personalizado · 25 de octubre de 2026
+
+- Menú propio con banderas SVG locales, nombres nativos, idioma activo y estilo rojo y blanco.
+- 22 pruebas y compilación aprobadas tanto localmente como en GitHub Actions.
+- Revisión pública: cambio de idioma y foco restaurado; flechas, Home, Escape y Tab comprobados.
+- Menú revisado a 320 px sin desbordamiento horizontal; alineación móvil anclada al grupo de acciones.
+
 ## Refactor y traducciones · 25 de octubre de 2026
 
 - TypeScript estricto y compilación de producción: aprobados.
