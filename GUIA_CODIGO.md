@@ -125,3 +125,6 @@ npm run build
 El primer comando abre el servidor de desarrollo. `npm test` ejecuta las **22 pruebas** actuales sobre traducciones, idioma, fechas, edad y datos deportivos. El build comprueba TypeScript, genera `dist/` con Vite y prepara `ABRIR.html` para la vista local.
 
 Cuando el próximo commit llegue a `main`, el workflow `.github/workflows/pages.yml` instalará dependencias, ejecutará pruebas y build, y publicará `dist/` con GitHub Pages. Esta guía no confirma una nueva publicación: describe el proceso configurado.
+
+
+El selector personalizado está en `components/layout/LanguageSwitcher.tsx`: `open` controla si el menú está abierto y `activeIndex` indica la opción enfocada con el teclado. Al elegir un idioma llama a `setLanguage` del contexto. `components/ui/LanguageFlag.tsx` dibuja las banderas con SVG locales; su aspecto y el del menú se ajustan en `styles/language.css`. No necesita librerías adicionales ni servicios externos.
