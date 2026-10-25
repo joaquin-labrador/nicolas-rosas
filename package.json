@@ -7,7 +7,9 @@
     "dev": "vite --host 127.0.0.1 --configLoader native",
     "build": "tsc -b && vite build --configLoader native && node scripts/make-offline.mjs",
     "preview": "vite preview --host 127.0.0.1 --configLoader native",
-    "test:feed": "node --experimental-strip-types --test work/footballFeed.test.ts"
+    "test:feed": "node --experimental-strip-types --test work/footballFeed.test.ts",
+    "test": "node --experimental-strip-types --test work/footballFeed.test.ts tests/*.test.ts",
+    "format": "prettier --write src tests scripts"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

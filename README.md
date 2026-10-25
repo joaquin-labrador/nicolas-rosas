@@ -43,11 +43,22 @@ Abrí la dirección que indique Vite (normalmente `http://127.0.0.1:4173/` para 
 - Canales externos para consultar resultados, noticias y programación. No se afirma una retransmisión sin confirmación.
 - Conexión opcional a un feed público validado, con actualización mientras la pestaña está visible y caducidad de datos.
 
+## Idiomas y organización
+
+El selector ofrece español, inglés, portugués de Portugal, italiano y francés. La elección se guarda localmente y se puede compartir con `?lang=es`, `?lang=en`, `?lang=pt`, `?lang=it` o `?lang=fr`. Tiene prioridad el idioma del enlace; después la preferencia guardada, el navegador y, como respaldo, español.
+
+Los textos son constantes en `src/i18n/locales/`. Los cinco diccionarios comparten una estructura comprobada por TypeScript y por pruebas. También se traducen formularios, validaciones, ventanas, títulos de imágenes, accesibilidad, ficha imprimible y metadatos. Las fechas se formatean con `Intl`; no se contrata una API de traducción.
+
+Para aprender cómo se conectan estas piezas, leé [GUIA_CODIGO.md](GUIA_CODIGO.md).
+
 ## Editar contenido
 
-- `src/data/player.ts`: biografía estructurada, trayectoria, Instagram, fotografías y fuentes.
-- `src/App.tsx`: secciones, galería, propuesta profesional y versión imprimible.
-- `src/styles.css`: diseño y reglas de móvil/impresión.
+- `src/data/player.ts`: datos deportivos, estadísticas, Instagram, fotografías y enlaces verificables.
+- `src/i18n/locales/`: textos y trayectoria en cinco idiomas.
+- `src/i18n/I18nProvider.tsx`: idioma compartido, preferencia y metadatos.
+- `src/App.tsx`: composición de las secciones.
+- `src/components/`: componentes de cabecera, secciones, diálogos, impresión y piezas reutilizables.
+- `src/styles.css`: entrada que importa los módulos de `src/styles/`, separados por sección, reglas adaptables e impresión.
 - `public/images/`: originales facilitados, copiados sin modificar.
 - `src/lib/footballFeed.ts` y `useFootballFeed.ts`: contrato, validación, caducidad y consultas opcionales.
 
@@ -61,7 +72,7 @@ Leé **INTEGRACIONES.md** para conectar un endpoint propio y **INVESTIGACION.md*
 
 ## Validación realizada
 
-`npm run build` realiza comprobación estricta de TypeScript y compilación. `npm run test:feed` ejecuta seis pruebas de datos, URLs, estadísticas incoherentes y caducidad. Se revisaron en navegador el diseño de escritorio y móvil (390 px), menú, cambio de etapa, galería, navegación con teclado, pestañas, modales y preparación/actualización de la propuesta. No se enviaron mensajes externos.
+`npm run build` realiza comprobación estricta de TypeScript y compilación. `npm test` ejecuta 22 pruebas de traducciones completas, parámetros, prioridad de idioma, fechas, edad y feed deportivo. `npm run test:feed` conserva las seis pruebas específicas del feed. Se revisaron en navegador el diseño de escritorio y móvil (390 px), menú, cambio de etapa, galería, navegación con teclado, pestañas, modales y preparación/actualización de la propuesta. No se enviaron mensajes externos.
 
 ## Despliegue gratuito en GitHub Pages
 
@@ -70,7 +81,7 @@ La web se publica desde este repositorio público, con autorización de su propi
 Proceso configurado:
 
 1. **Settings → Pages → Source → GitHub Actions.** Se usa el dominio gratuito `github.io`, con HTTPS.
-2. Al subir cambios a `main`, [el workflow Pages](.github/workflows/pages.yml) ejecuta `npm ci`, las seis pruebas del feed y `npm run build`.
+2. Al subir cambios a `main`, [el workflow Pages](.github/workflows/pages.yml) ejecuta `npm ci`, las 22 pruebas de la aplicación y `npm run build`.
 3. El job `build` sube únicamente `dist/` como artefacto de la web.
 4. El job `deploy` publica ese artefacto en el entorno `github-pages`.
 5. El resultado se consulta en [Actions](https://github.com/joaquin-labrador/nicolas-rosas/actions). También se puede iniciar manualmente con **Run workflow**.

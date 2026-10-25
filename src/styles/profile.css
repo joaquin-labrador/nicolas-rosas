@@ -1,0 +1,128 @@
+.profile-section {
+  padding-top: 65px;
+  padding-bottom: 110px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(50px, 8vw, 135px);
+  align-items: center;
+}
+.profile-visual {
+  position: relative;
+  padding-bottom: 56px;
+}
+.section-index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  margin-bottom: 15px;
+}
+.section-index > span:last-child {
+  color: var(--muted);
+}
+.profile-main-photo {
+  aspect-ratio: 4/4.8;
+  object-position: 50% 46%;
+  filter: saturate(0.8);
+}
+.profile-image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--red);
+  padding: 20px 25px;
+  color: white;
+}
+.profile-image-caption > span {
+  font-family: var(--display);
+  font-size: 23px;
+  line-height: 1.02;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+.profile-image-caption b {
+  font-weight: 600;
+}
+.floating-year {
+  position: absolute;
+  top: 47px;
+  left: -19px;
+  padding: 14px 17px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 7px 7px 0 #1d211f0a;
+}
+.floating-year span {
+  font-size: 7px;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+}
+.floating-year b {
+  font: 600 40px/0.95 var(--display);
+  margin-top: 4px;
+}
+.profile-copy > .eyebrow {
+  margin-bottom: 21px;
+}
+.profile-copy h2 {
+  font-size: clamp(48px, 4.9vw, 75px);
+  line-height: 0.97;
+}
+.profile-copy > p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #6a7068;
+  margin-top: 22px;
+  max-width: 410px;
+}
+.profile-copy > p + p {
+  margin-top: 12px;
+}
+.player-facts {
+  margin: 26px 0 22px;
+}
+.player-facts > div {
+  border-bottom: 1px solid var(--line);
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 105px 1fr;
+  gap: 10px;
+}
+.player-facts dt {
+  font-size: 10px;
+  color: var(--muted);
+}
+.player-facts dd {
+  font-size: 10px;
+  font-weight: 800;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.arg-flag {
+  width: 18px;
+  height: 12px;
+  background: linear-gradient(#80b7d8 33%, white 33%, white 66%, #80b7d8 66%);
+  border: 1px solid #cad3d3;
+}
+.download-link {
+  font-size: 11px;
+}
+.download-link > svg:last-child {
+  margin-left: 8px;
+}
+.profile-copy > .small-note {
+  display: block;
+  font-size: 8px;
+  margin-top: 9px;
+}

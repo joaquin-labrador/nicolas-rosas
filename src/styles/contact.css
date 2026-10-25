@@ -1,0 +1,100 @@
+.contact-section {
+  padding-top: 76px;
+  padding-bottom: 80px;
+}
+.contact-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 21px;
+  margin-bottom: 38px;
+}
+.contact-location {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--muted);
+}
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+.contact-layout h2 {
+  font-size: clamp(65px, 7.9vw, 120px);
+  line-height: 0.88;
+}
+.contact-layout p {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 26px;
+  line-height: 1.9;
+}
+.contact-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 29px;
+  flex-wrap: wrap;
+}
+.contact-actions .button {
+  font-size: 10px;
+  gap: 10px;
+  padding-inline: 18px;
+  min-height: 49px;
+}
+.contact-actions .text-link {
+  font-size: 10px;
+}
+.contact-handle {
+  display: block;
+  font-size: 9px;
+  color: var(--muted);
+  margin-top: 14px;
+}
+.contact-art {
+  height: 330px;
+  position: relative;
+  overflow: hidden;
+}
+.contact-art img {
+  object-position: 50% 33%;
+  filter: grayscale(1);
+  transition:
+    filter 0.5s,
+    transform 0.7s;
+}
+.contact-art:after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background: linear-gradient(0deg, #161c15a6, transparent 60%);
+  mix-blend-mode: multiply;
+}
+.contact-art:hover img {
+  filter: grayscale(0.3);
+  transform: scale(1.035);
+}
+.contact-art-word {
+  position: absolute;
+  z-index: 1;
+  bottom: 24px;
+  left: 23px;
+  font-family: var(--display);
+  font-size: 44px;
+  line-height: 0.92;
+  color: #fff;
+  letter-spacing: 0.015em;
+  font-weight: 600;
+}
+.contact-art-arrow {
+  position: absolute;
+  right: 18px;
+  top: 16px;
+  color: #fff;
+}

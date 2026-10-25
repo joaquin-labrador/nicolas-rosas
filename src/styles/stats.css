@@ -1,0 +1,84 @@
+.season-section {
+  padding-top: 58px;
+  padding-bottom: 42px;
+}
+.season-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.season-heading > .eyebrow {
+  font-size: 9px;
+}
+.season-heading > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.season-pill {
+  font-size: 10px;
+  font-weight: 800;
+  border: 1px solid #d5d8cf;
+  border-radius: 20px;
+  padding: 6px 12px;
+}
+.stats-club {
+  font-size: 9px;
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 24px 0 28px;
+}
+.stats-grid > div {
+  padding-left: 28px;
+  border-left: 1px solid var(--line);
+}
+.stats-grid > div:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+.stats-grid strong {
+  display: block;
+  font-family: var(--display);
+  font-size: clamp(64px, 7.3vw, 110px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+.stats-grid strong > i {
+  font-style: normal;
+  font-size: 0.5em;
+  color: var(--red);
+  margin-left: 4px;
+}
+.stats-grid > div > span {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  display: block;
+  margin-top: 10px;
+}
+.source-note {
+  font-size: 9px;
+  color: #73786e;
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+  line-height: 1.7;
+}
+.source-note a {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  border-bottom: 1px solid #cccfc3;
+  color: var(--ink);
+}

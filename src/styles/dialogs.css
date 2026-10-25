@@ -1,0 +1,191 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: #07120edb;
+  backdrop-filter: blur(6px);
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+.modal {
+  position: relative;
+  background: var(--paper);
+  width: 650px;
+  max-width: 100%;
+  max-height: 90svh;
+  overflow: auto;
+  padding: 44px;
+  box-shadow: 0 20px 120px #0006;
+  scrollbar-width: thin;
+}
+.modal-close {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  z-index: 5;
+}
+.modal > .eyebrow {
+  margin-bottom: 18px;
+}
+.modal h2 {
+  font-size: 55px;
+  line-height: 0.96;
+  margin-bottom: 19px;
+}
+.modal > p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.sources-list {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0;
+}
+.sources-list > a {
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+.sources-list > a:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.sources-list strong {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 800;
+}
+.sources-list span {
+  display: block;
+  font-size: 10px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-top: 6px;
+  max-width: 440px;
+}
+.sources-list a:hover strong {
+  color: var(--red);
+}
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+  margin-top: 24px;
+}
+.contact-form label {
+  font-size: 10px;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  border: 1px solid #ccd1c3;
+  background: #fff;
+  padding: 12px;
+  font-size: 11px;
+  border-radius: 0;
+  width: 100%;
+  color: var(--ink);
+}
+.contact-form textarea {
+  resize: vertical;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #8c9386;
+}
+.full {
+  grid-column: 1/-1;
+}
+.contact-form .button {
+  margin-top: 0;
+  font-size: 11px;
+}
+.form-note {
+  font-size: 9px !important;
+  margin-top: 15px;
+}
+.draft-box {
+  background: #e9ede1;
+  padding: 15px;
+  margin-top: 20px;
+}
+.draft-box > p {
+  font-size: 10px;
+  line-height: 1.7;
+}
+.draft-box > textarea {
+  font-size: 11px;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #cbd3c0;
+  background: white;
+  resize: vertical;
+}
+.draft-box .text-link {
+  font-size: 11px;
+}
+.modal.lightbox {
+  width: auto;
+  max-width: 100%;
+  padding: 0;
+  background: #101a13;
+  color: white;
+  overflow: visible;
+  max-height: 95svh;
+  display: flex;
+  flex-direction: column;
+}
+.lightbox .modal-close {
+  background: #0b150ac9;
+  color: white;
+  right: 12px;
+  top: 12px;
+  border-radius: 50%;
+}
+.lightbox-image {
+  object-fit: contain;
+  width: auto;
+  max-width: min(80vw, 850px);
+  max-height: 76svh;
+  height: auto;
+  min-height: 0;
+}
+.lightbox-bottom {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.lightbox-bottom .eyebrow {
+  font-size: 8px;
+  color: #98a590;
+}
+.lightbox-bottom p {
+  font-family: var(--display);
+  font-size: 24px;
+  line-height: 1.1;
+  margin-top: 3px;
+}
+.lightbox-bottom > div:last-child {
+  display: flex;
+  gap: 6px;
+}
+.lightbox-bottom .icon-button {
+  border: 1px solid #6f7e64;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+}
+.lightbox-bottom .icon-button:hover {
+  background: var(--red);
+}

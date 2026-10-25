@@ -1,0 +1,142 @@
+/* Ajustes compartidos para textos en varios idiomas y el selector. */
+[hidden] {
+  display: none !important;
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+.language-switcher svg {
+  color: var(--red);
+}
+.language-switcher select {
+  max-width: 96px;
+  padding: 8px 2px;
+  background: transparent;
+  border: 0;
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.identity-item {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.identity-strip .identity-item svg {
+  display: block;
+}
+.hero-bottom > div:last-of-type > span {
+  max-width: 110px;
+}
+.hero-copy > .eyebrow {
+  white-space: normal;
+}
+.profile-copy h2,
+.section-heading h2,
+.follow-copy h2,
+.contact-layout h2 {
+  overflow-wrap: anywhere;
+}
+.section-heading > div:first-child {
+  min-width: 0;
+}
+.career-tabs > button > strong {
+  overflow-wrap: anywhere;
+}
+.hero-actions,
+.hero-secondary {
+  flex-shrink: 0;
+}
+.hero-actions {
+  flex-wrap: wrap;
+  row-gap: 14px;
+}
+.player-facts > div {
+  grid-template-columns: minmax(100px, 0.8fr) 1.8fr;
+}
+.player-facts dt,
+.player-facts dd {
+  overflow-wrap: anywhere;
+}
+.follow-link {
+  overflow-wrap: anywhere;
+}
+.follow-link > div {
+  min-width: 0;
+}
+@media (max-width: 1150px) {
+  .header {
+    gap: 20px;
+  }
+  .header-actions {
+    gap: 15px;
+  }
+  .nav {
+    gap: 19px;
+  }
+}
+@media (max-width: 960px) {
+  .header-actions .header-contact {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .header-actions {
+    margin-left: auto;
+    gap: 16px;
+  }
+  .language-switcher select {
+    max-width: 88px;
+    font-size: 11px;
+  }
+  .identity-strip .identity-item:nth-child(n + 3) {
+    display: none;
+  }
+  .identity-strip .identity-item {
+    gap: 18px;
+  }
+  .identity-strip .identity-item > span {
+    display: inline;
+  }
+  .identity-strip .identity-item svg {
+    display: block;
+  }
+  .identity-strip .identity-item:nth-child(2) svg {
+    display: none;
+  }
+  .media-section .section-heading {
+    flex-wrap: wrap;
+  }
+  .follow-copy h2 {
+    font-size: clamp(42px, 14vw, 64px);
+  }
+  .contact-layout h2 {
+    font-size: clamp(55px, 19vw, 88px);
+  }
+  .profile-copy h2 {
+    font-size: clamp(46px, 14vw, 62px);
+  }
+  .career-panel h3 {
+    font-size: clamp(35px, 11vw, 48px);
+  }
+  .season-heading {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 370px) {
+  .header-actions {
+    gap: 12px;
+  }
+  .language-switcher select {
+    max-width: 79px;
+  }
+}

@@ -1,0 +1,99 @@
+.header {
+  height: 88px;
+  padding-inline: var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  background: rgba(248, 248, 244, 0.97);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(12px);
+  max-width: 1800px;
+  margin-inline: auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.brand > span:last-child {
+  font-size: 10px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+.brand > span:last-child strong {
+  font-size: 13px;
+  letter-spacing: 0.15em;
+}
+.brand-mark {
+  font-family: var(--display);
+  font-size: 37px;
+  letter-spacing: -4px;
+  position: relative;
+  display: inline-block;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1;
+  width: 53px;
+  color: var(--red);
+}
+.brand-mark > span {
+  position: relative;
+  left: -1px;
+}
+.brand-mark i {
+  position: absolute;
+  height: 4px;
+  width: 37px;
+  background: var(--red);
+  bottom: -3px;
+  left: 5px;
+  transform: skewX(-20deg);
+}
+.brand-mark.light {
+  color: white;
+}
+.brand-mark.light i {
+  background: #fff;
+}
+.nav {
+  display: flex;
+  gap: 31px;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+.nav > a {
+  position: relative;
+  padding: 10px 0;
+}
+.nav > a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--red);
+  transition: width 0.2s;
+}
+.nav > a:hover:after {
+  width: 100%;
+}
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-size: 11px;
+  font-weight: 800;
+  border-bottom: 1px solid var(--red);
+  padding: 9px 0;
+  color: var(--red);
+}
+.menu-button,
+.mobile-contact {
+  display: none;
+}

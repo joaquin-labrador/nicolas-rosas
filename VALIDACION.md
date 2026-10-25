@@ -1,5 +1,15 @@
 # Validación de la entrega
 
+## Refactor y traducciones · 25 de octubre de 2026
+
+- TypeScript estricto y compilación de producción: aprobados.
+- `npm test`: 22 pruebas aprobadas (16 de idiomas, fechas y perfil; 6 de datos deportivos).
+- Cinco diccionarios completos, sin parámetros ausentes, con validación de claves y longitudes.
+- Revisión de código: componentes, navegación, formularios, persistencia, impresión y metadatos separados por responsabilidad.
+- La vista previa local no pudo conectarse desde el navegador de este entorno; la comprobación visual se realizará sobre el despliegue de Pages.
+
+## Primera entrega · 24 de octubre de 2026
+
 24 de octubre de 2026.
 
 - TypeScript estricto y build de producción: aprobados.

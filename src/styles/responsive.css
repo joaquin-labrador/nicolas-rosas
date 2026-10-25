@@ -1,0 +1,850 @@
+@media (min-width: 1500px) {
+  .hero-copy {
+    padding-top: 65px;
+  }
+  .hero h1 {
+    margin-top: 48px;
+  }
+  .hero-description {
+    margin-top: 38px;
+  }
+  .hero-description p {
+    font-size: 24px;
+  }
+  .hero-summary {
+    font-size: 14px;
+    margin-top: 22px;
+  }
+  .hero-actions {
+    margin-top: 30px;
+  }
+  .hero-actions .button {
+    font-size: 12px;
+    min-height: 56px;
+  }
+  .hero-bottom {
+    padding-top: 40px;
+  }
+  .hero-bottom > div {
+    padding-right: 35px;
+  }
+  .hero-bottom > div > span {
+    font-size: 8px;
+  }
+  .hero-bottom b {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1100px) {
+  :root {
+    --gutter: 40px;
+  }
+  .nav {
+    gap: 21px;
+  }
+  .hero {
+    min-height: 680px;
+    max-height: 800px;
+    grid-template-columns: 1.07fr 1fr;
+  }
+  .hero-copy {
+    padding-right: 28px;
+  }
+  .hero-copy > .eyebrow {
+    font-size: 8px;
+    letter-spacing: 0.08em;
+  }
+  .hero-season {
+    display: none;
+  }
+  .hero h1 {
+    font-size: clamp(95px, 11.7vw, 129px);
+    margin-top: 48px;
+  }
+  .hero-actions {
+    gap: 19px;
+  }
+  .hero-actions .button {
+    font-size: 10px;
+    padding-inline: 16px;
+  }
+  .hero-secondary {
+    font-size: 10px;
+  }
+  .hero-bottom {
+    gap: 21px;
+  }
+  .hero-bottom > div {
+    padding-right: 20px;
+  }
+  .hero-bottom > div > span {
+    font-size: 6px;
+  }
+  .hero-bottom b {
+    font-size: 25px;
+  }
+  .down-link {
+    width: 32px;
+    height: 32px;
+  }
+  .identity-strip {
+    gap: 18px;
+  }
+  .identity-strip span {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+  }
+  .identity-strip svg:last-child {
+    display: none;
+  }
+  .profile-section {
+    gap: 55px;
+    padding-top: 45px;
+    padding-bottom: 80px;
+  }
+  .profile-copy h2 {
+    font-size: 56px;
+  }
+  .profile-copy > p {
+    font-size: 11px;
+    margin-top: 18px;
+  }
+  .player-facts > div {
+    padding: 9px 0;
+  }
+  .career-layout {
+    gap: 25px;
+    grid-template-columns: 1fr 1.2fr;
+  }
+  .career-tabs > button {
+    grid-template-columns: 76px 1fr 18px;
+    gap: 10px;
+  }
+  .career-tabs > button > strong {
+    font-size: 22px;
+  }
+  .career-tabs > button > span {
+    font-size: 7px;
+  }
+  .career-panel {
+    padding: 26px;
+    min-height: 458px;
+  }
+  .gallery-grid {
+    grid-template-rows: 210px 210px;
+  }
+  .gallery-photo-overlay {
+    padding: 17px;
+  }
+  .gallery-photo-overlay > span:first-child {
+    font-size: 20px;
+  }
+  .follow-layout {
+    gap: 45px;
+  }
+  .contact-layout {
+    gap: 30px;
+    grid-template-columns: 1.3fr 1fr;
+  }
+  .contact-layout h2 {
+    font-size: 86px;
+  }
+  .contact-art {
+    height: 310px;
+  }
+  .contact-actions {
+    gap: 18px;
+  }
+  .footer > div {
+    gap: 14px;
+  }
+  .footer-brand > span:last-child {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  :root {
+    --gutter: 24px;
+  }
+  html {
+    scroll-padding-top: 72px;
+  }
+  .header {
+    height: 72px;
+  }
+  .brand {
+    gap: 10px;
+  }
+  .brand-mark {
+    font-size: 31px;
+    width: 44px;
+  }
+  .brand-mark i {
+    width: 31px;
+    height: 3px;
+  }
+  .brand > span:last-child {
+    font-size: 8px;
+  }
+  .brand > span:last-child strong {
+    font-size: 11px;
+  }
+  .header-contact {
+    margin-left: auto;
+    margin-right: 19px;
+    font-size: 10px;
+    gap: 10px;
+    padding-bottom: 6px;
+  }
+  .menu-button {
+    display: flex;
+    padding: 6px;
+  }
+  .menu-button svg {
+    width: 22px;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 71px;
+    left: 0;
+    right: 0;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    padding: 15px 24px 24px;
+    box-shadow: 0 25px 25px #1d211f12;
+  }
+  .nav.is-open {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .nav a {
+    padding: 14px 0;
+    font-size: 13px;
+    border-bottom: 1px solid var(--line);
+  }
+  .nav .mobile-contact {
+    display: block;
+    color: var(--red);
+  }
+  .hero {
+    height: auto;
+    max-height: none;
+    min-height: 0;
+    grid-template-columns: 1fr;
+    overflow: visible;
+  }
+  .hero-copy {
+    padding: 30px 24px 26px;
+  }
+  .hero-copy > .eyebrow {
+    font-size: 8px;
+    letter-spacing: 0.1em;
+  }
+  .hero-season {
+    display: block;
+    font-size: 8px;
+  }
+  .hero h1 {
+    font-size: clamp(99px, 24vw, 176px);
+    margin-top: 32px;
+    line-height: 0.79;
+    left: -3px;
+    letter-spacing: -0.02em;
+  }
+  .hero h1 > span {
+    margin-top: 7px;
+  }
+  .hero-description {
+    margin-top: 25px;
+    gap: 13px;
+  }
+  .hero-description p {
+    font-size: 18px;
+  }
+  .vertical-rule {
+    height: 40px;
+  }
+  .hero-summary {
+    font-size: 11px;
+    margin-top: 15px;
+  }
+  .hero-actions {
+    margin-top: 22px;
+    gap: 27px;
+  }
+  .hero-actions .button {
+    padding: 15px 20px;
+    font-size: 10px;
+  }
+  .hero-secondary {
+    font-size: 10px;
+  }
+  .hero-bottom {
+    margin-top: 28px;
+    padding-top: 21px;
+    gap: 24px;
+    border-top: 1px solid var(--line);
+  }
+  .hero-bottom > div {
+    padding-right: 24px;
+  }
+  .hero-bottom b {
+    font-size: 24px;
+  }
+  .hero-bottom > div > span {
+    font-size: 6px;
+    margin-top: 6px;
+  }
+  .down-link {
+    display: none;
+  }
+  .hero-photo {
+    height: 560px;
+    max-height: 125vw;
+  }
+  .hero-photo > img {
+    object-position: 50% 53%;
+  }
+  .hero-photo-label {
+    font-size: 7px;
+    left: 24px;
+    top: 22px;
+  }
+  .club-caption {
+    left: 24px;
+    bottom: 28px;
+    right: 26px;
+  }
+  .club-caption strong {
+    font-size: 32px;
+  }
+  .club-caption p {
+    font-size: 8px;
+  }
+  .club-symbol {
+    width: 44px;
+    height: 52px;
+    font-size: 25px;
+  }
+  .side-caption {
+    font-size: 6px;
+    right: 12px;
+  }
+  .identity-strip {
+    height: 47px;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 0 24px;
+  }
+  .identity-strip span {
+    font-size: 13px;
+    letter-spacing: 0.03em;
+  }
+  .identity-strip span:nth-of-type(n + 3),
+  .identity-strip svg:nth-of-type(n + 2) {
+    display: none;
+  }
+  .season-section {
+    padding-top: 36px;
+    padding-bottom: 30px;
+  }
+  .season-heading {
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+  .season-heading > .eyebrow {
+    font-size: 7px;
+    letter-spacing: 0.08em;
+  }
+  .season-heading > div {
+    gap: 7px;
+  }
+  .season-pill {
+    font-size: 8px;
+    padding: 5px 9px;
+  }
+  .stats-club {
+    display: none;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+  .stats-grid > div {
+    padding: 20px 15px !important;
+    border-left: 0;
+  }
+  .stats-grid > div:nth-child(even) {
+    border-left: 1px solid var(--line);
+  }
+  .stats-grid > div:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--line);
+  }
+  .stats-grid strong {
+    font-size: 72px;
+    line-height: 1;
+  }
+  .stats-grid > div > span {
+    font-size: 7px;
+    letter-spacing: 0.07em;
+    margin-top: 8px;
+  }
+  .source-note {
+    font-size: 8px;
+    line-height: 1.7;
+    gap: 5px;
+  }
+  .profile-section {
+    grid-template-columns: 1fr;
+    gap: 37px;
+    padding-top: 25px;
+    padding-bottom: 60px;
+  }
+  .profile-visual {
+    max-width: 100%;
+    padding-bottom: 55px;
+  }
+  .profile-main-photo {
+    aspect-ratio: 4/4;
+    object-position: 50% 42%;
+  }
+  .section-index {
+    font-size: 7px;
+  }
+  .floating-year {
+    left: -10px;
+    top: 38px;
+    padding: 12px 14px;
+  }
+  .floating-year b {
+    font-size: 35px;
+  }
+  .profile-image-caption {
+    height: 76px;
+    padding: 17px 21px;
+  }
+  .profile-image-caption > span {
+    font-size: 22px;
+  }
+  .profile-image-caption svg {
+    width: 28px;
+  }
+  .profile-copy h2 {
+    font-size: 62px;
+    line-height: 0.95;
+  }
+  .profile-copy > .eyebrow {
+    font-size: 8px;
+    margin-bottom: 16px;
+  }
+  .profile-copy > p {
+    font-size: 12px;
+    max-width: 100%;
+  }
+  .player-facts {
+    margin: 23px 0;
+  }
+  .player-facts > div {
+    grid-template-columns: 110px 1fr;
+    padding: 12px 0;
+  }
+  .player-facts dt,
+  .player-facts dd {
+    font-size: 10px;
+  }
+  .download-link {
+    font-size: 11px;
+  }
+  .profile-copy > .small-note {
+    font-size: 9px;
+  }
+  .career-section {
+    padding: 52px 0;
+  }
+  .section-heading {
+    display: block;
+    margin-bottom: 28px;
+  }
+  .section-heading .eyebrow {
+    font-size: 8px;
+    margin-bottom: 15px;
+  }
+  .section-heading h2 {
+    font-size: 57px;
+    line-height: 0.96;
+  }
+  .section-heading > p {
+    font-size: 10px;
+    margin-top: 18px;
+  }
+  .career-layout {
+    grid-template-columns: 1fr;
+    gap: 21px;
+  }
+  .career-tabs > button {
+    min-height: 63px;
+    grid-template-columns: 95px 1fr 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+  .career-tabs > button > span {
+    font-size: 8px;
+  }
+  .career-tabs > button > strong {
+    font-size: 25px;
+  }
+  .career-panel {
+    min-height: 405px;
+    padding: 23px;
+  }
+  .career-panel-body {
+    margin-top: 32px;
+  }
+  .career-panel h3 {
+    font-size: 48px;
+  }
+  .career-panel p {
+    font-size: 11px;
+    margin-top: 18px;
+  }
+  .career-panel .career-note {
+    font-size: 9px;
+  }
+  .career-large-number {
+    font-size: 270px;
+  }
+  .career-source {
+    font-size: 10px;
+  }
+  .media-section {
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
+  .media-section .section-heading {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+  }
+  .media-section .section-heading h2 {
+    font-size: 62px;
+  }
+  .media-tabs {
+    gap: 16px;
+  }
+  .media-tabs > button {
+    font-size: 9px;
+    padding: 10px 0;
+    gap: 6px;
+  }
+  .media-tabs > button > span {
+    font-size: 7px;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 230px;
+    gap: 10px;
+  }
+  .photo-0 {
+    grid-row: auto;
+    grid-column: span 2;
+  }
+  .photo-3 {
+    grid-column: span 2;
+    display: none;
+  }
+  .gallery-photo-overlay {
+    padding: 17px;
+  }
+  .gallery-photo-overlay > span:first-child {
+    font-size: 22px;
+  }
+  .photo-0 img {
+    object-position: center 62% !important;
+  }
+  .gallery-photo-number {
+    left: 17px;
+    top: 15px;
+    font-size: 8px;
+  }
+  .gallery-plus {
+    width: 26px;
+    height: 26px;
+  }
+  .gallery-plus svg {
+    width: 17px;
+  }
+  .gallery-footer {
+    gap: 15px;
+    align-items: flex-start;
+    margin-top: 17px;
+  }
+  .gallery-footer > span {
+    font-size: 8px;
+    max-width: 100px;
+    line-height: 1.7;
+  }
+  .gallery-footer > .text-link {
+    font-size: 9px;
+  }
+  .video-empty {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 20px 0 28px;
+  }
+  .video-still {
+    height: 260px;
+  }
+  .video-empty h3 {
+    font-size: 42px;
+  }
+  .video-empty p {
+    max-width: 100%;
+  }
+  .follow-section {
+    padding: 52px 0 43px;
+  }
+  .follow-layout {
+    grid-template-columns: 1fr;
+    gap: 31px;
+  }
+  .follow-copy > .eyebrow {
+    font-size: 8px;
+    margin-bottom: 20px;
+  }
+  .follow-copy h2 {
+    font-size: 64px;
+  }
+  .follow-copy > p {
+    font-size: 11px;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .follow-status {
+    font-size: 8px;
+    margin-top: 22px;
+  }
+  .follow-links {
+    margin-top: 0;
+  }
+  .follow-link {
+    padding: 21px 0;
+    gap: 13px;
+  }
+  .follow-link > .follow-icon {
+    width: 31px;
+  }
+  .follow-link > div > span {
+    font-size: 7px;
+  }
+  .follow-link h3 {
+    font-size: 27px;
+  }
+  .follow-link p {
+    font-size: 8px;
+  }
+  .follow-link > svg {
+    width: 21px;
+  }
+  .follow-disclaimer {
+    font-size: 8px;
+  }
+  .contact-section {
+    padding-top: 45px;
+    padding-bottom: 44px;
+  }
+  .contact-top {
+    padding-bottom: 16px;
+    margin-bottom: 28px;
+    gap: 10px;
+  }
+  .contact-top > .eyebrow {
+    font-size: 8px;
+  }
+  .contact-location {
+    font-size: 6px;
+    gap: 5px;
+  }
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .contact-layout h2 {
+    font-size: 88px;
+  }
+  .contact-layout p {
+    font-size: 11px;
+    margin-top: 22px;
+  }
+  .contact-actions {
+    gap: 20px;
+    margin-top: 23px;
+  }
+  .contact-actions .button {
+    font-size: 10px;
+  }
+  .contact-actions .text-link {
+    font-size: 10px;
+  }
+  .contact-handle {
+    font-size: 9px;
+  }
+  .contact-art {
+    height: 300px;
+  }
+  .contact-art img {
+    object-position: 50% 35%;
+  }
+  .contact-art-word {
+    font-size: 44px;
+  }
+  .footer {
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-top: 25px;
+    padding-bottom: 27px;
+  }
+  .footer > span {
+    font-size: 8px;
+    margin-left: auto;
+  }
+  .footer-brand > span:last-child {
+    display: block;
+    font-size: 7px;
+  }
+  .footer > div {
+    width: 100%;
+    gap: 24px;
+  }
+  .footer > div > a:last-child {
+    margin-left: auto;
+  }
+  .footer > div > a,
+  .footer button {
+    font-size: 9px;
+  }
+  .modal-backdrop {
+    padding: 15px;
+  }
+  .modal {
+    padding: 35px 23px;
+    max-height: 90svh;
+  }
+  .modal h2 {
+    font-size: 49px;
+  }
+  .modal > .eyebrow {
+    font-size: 8px;
+  }
+  .modal > p {
+    font-size: 11px;
+  }
+  .modal-close {
+    top: 6px;
+    right: 6px;
+    padding: 8px;
+  }
+  .contact-form {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 13px;
+    padding: 12px;
+  }
+  .sources-list strong {
+    font-size: 11px;
+  }
+  .sources-list span {
+    font-size: 10px;
+  }
+  .modal.lightbox {
+    max-width: 100%;
+    width: 100%;
+  }
+  .lightbox-image {
+    width: 100%;
+    max-width: 100%;
+    max-height: 73svh;
+    object-fit: contain;
+  }
+  .lightbox-bottom {
+    padding: 15px;
+    gap: 10px;
+  }
+  .lightbox-bottom p {
+    font-size: 22px;
+  }
+  .lightbox-bottom .icon-button {
+    width: 30px;
+    height: 30px;
+  }
+  .lightbox-bottom .icon-button svg {
+    width: 19px;
+  }
+}
+@media (max-width: 370px) {
+  :root {
+    --gutter: 18px;
+  }
+  .hero-copy {
+    padding-inline: 18px;
+  }
+  .hero-copy > .eyebrow {
+    font-size: 7px;
+    gap: 7px;
+  }
+  .hero-actions {
+    gap: 16px;
+  }
+  .hero-bottom {
+    gap: 18px;
+  }
+  .hero-bottom > div {
+    padding-right: 18px;
+  }
+  .contact-layout h2 {
+    font-size: 77px;
+  }
+  .section-heading h2 {
+    font-size: 52px;
+  }
+  .media-tabs {
+    gap: 10px;
+  }
+  .media-section .section-heading .eyebrow {
+    font-size: 7px;
+    letter-spacing: 0.07em;
+  }
+  .contact-location {
+    font-size: 5px;
+  }
+  .header-contact {
+    margin-right: 13px;
+  }
+  .brand > span:last-child {
+    display: none;
+  }
+  .career-panel h3 {
+    font-size: 42px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *:before,
+  *:after {
+    transition: none !important;
+    animation: none !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

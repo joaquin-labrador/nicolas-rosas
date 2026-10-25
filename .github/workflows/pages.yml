@@ -21,12 +21,12 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '22'
+          node-version: "22"
           cache: npm
       - name: Install locked dependencies
         run: npm ci
-      - name: Test football data validation
-        run: npm run test:feed
+      - name: Test translations, profile and football data
+        run: npm test
       - name: Build React and TypeScript portfolio
         run: npm run build
       - name: Configure Pages
@@ -48,4 +48,3 @@ jobs:
       - name: Publish website
         id: deployment
         uses: actions/deploy-pages@v4
-

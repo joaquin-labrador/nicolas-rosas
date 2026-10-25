@@ -1,0 +1,95 @@
+@media print {
+  @page {
+    size: A4;
+    margin: 17mm;
+  }
+  html,
+  body {
+    background: white !important;
+    color: #1d211f !important;
+  }
+  body > * {
+    display: none !important;
+  }
+  body > #root {
+    display: block !important;
+  }
+  #root > * {
+    display: none !important;
+  }
+  #root > #print-profile {
+    display: block !important;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+  }
+  #print-profile .print-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid #d71920;
+    padding-bottom: 14px;
+    margin-bottom: 22px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
+  #print-profile .brand-mark {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+  }
+  #print-profile .print-content {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 27px;
+    align-items: center;
+  }
+  #print-profile .print-content img {
+    height: 215px;
+    object-position: center 45%;
+  }
+  #print-profile h1 {
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    margin: 0 0 15px;
+    color: #d71920;
+  }
+  #print-profile h2 {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-top: 26px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 7px;
+  }
+  #print-profile p {
+    font-size: 11px;
+    line-height: 1.8;
+    margin-top: 9px;
+  }
+  #print-profile dl {
+    display: grid;
+    grid-template-columns: 115px 1fr;
+    gap: 9px;
+    margin-top: 20px;
+    font-size: 9px;
+  }
+  #print-profile dt {
+    color: #6d7269;
+  }
+  #print-profile dd {
+    margin: 0;
+    font-weight: bold;
+  }
+  #print-profile small {
+    display: block;
+    margin-top: 25px;
+    font-size: 8px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+  }
+  .modal-backdrop {
+    display: none !important;
+  }
+}
