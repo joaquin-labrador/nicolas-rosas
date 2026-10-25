@@ -11,11 +11,24 @@ export function LanguageFlag({ language }: { language: Language }) {
     >
       {language === "es" && (
         <>
-          <path fill="#75aadb" d="M0 0h30v20H0z" />
-          <path fill="#fff" d="M0 6.67h30v6.66H0z" />
-          <g stroke="#e9b341" strokeWidth=".8">
-            <path d="M15 7v6m-3-3h6m-5.1-2.1 4.2 4.2m0-4.2-4.2 4.2" />
-            <circle cx="15" cy="10" r="1.4" fill="#f5c754" />
+          <path fill="#aa151b" d="M0 0h30v20H0z" />
+          <path fill="#f1bf00" d="M0 5h30v10H0z" />
+          <g>
+            <path
+              fill="#c58d23"
+              d="m8.3 7.8-.5-1.6 1.4.7.8-1 .8 1 1.4-.7-.5 1.6z"
+            />
+            <path
+              fill="#aa151b"
+              stroke="#c58d23"
+              strokeWidth=".5"
+              d="M8 8h4v3a2 2 0 0 1-4 0z"
+            />
+            <path
+              fill="#f1bf00"
+              d="M8.6 8.6h1.1v1.3H8.6zm1.7 1.8h1.1v1.2h-1.1z"
+            />
+            <path stroke="#eee" strokeWidth=".6" d="M7 8v4m6-4v4" />
           </g>
         </>
       )}
